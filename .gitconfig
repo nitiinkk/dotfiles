@@ -1,0 +1,5 @@
+# multiple git setup
+  [includeIf "gitdir:~/Desktop/"]
+	 path = ~/.gitconfig-work
+  [includeIf "gitdir:~/Personal/"]
+	 path = ~/.gitconfig-personal
