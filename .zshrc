@@ -27,6 +27,10 @@ PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 [[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
 [[ -f ~/.zsh/functions.zsh ]] && source ~/.zsh/functions.zsh
 
+#loads NVM
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+
 # Setup Fuzzy Finder
 #^r   Searches command history
 #^t   Searches directories
